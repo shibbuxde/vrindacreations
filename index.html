@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vrinda Creations Boutique — Designer Suits, Sarees & Lehengas | Sector 15A, Faridabad</title>
+<meta name="description" content="Vrinda Creations Boutique, Sector 15A, Faridabad — designer suits, sarees, bridal lehengas and custom stitching. Open all days, 10 AM – 10 PM. Call +91 78270 83826.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --maroon:#5c1120;
+    --maroon-deep:#420b16;
+    --gold:#c19a3f;
+    --gold-soft:#e6cf9a;
+    --ivory:#faf4e8;
+    --cream:#f3e9d5;
+    --ink:#2b1a1a;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Jost',sans-serif;color:var(--ink);background:var(--ivory);line-height:1.6}
+  img{display:block;max-width:100%}
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+
+  /* top ribbon */
+  .ribbon{background:var(--maroon-deep);color:var(--gold-soft);font-size:.82rem;letter-spacing:.14em;text-transform:uppercase}
+  .ribbon .wrap{display:flex;justify-content:space-between;gap:12px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+  .ribbon a{color:#fff}
+
+  /* nav */
+  header{position:sticky;top:0;z-index:50;background:rgba(250,244,232,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--gold-soft)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+  .brand{display:flex;align-items:center;gap:12px}
+  .monogram{width:46px;height:46px;border:1.5px solid var(--gold);color:var(--maroon);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:700;transform:rotate(45deg)}
+  .monogram span{transform:rotate(-45deg)}
+  .brand h1{font-family:'Cormorant Garamond',serif;font-size:1.45rem;line-height:1.05;color:var(--maroon);font-weight:700}
+  .brand small{letter-spacing:.32em;text-transform:uppercase;font-size:.62rem;color:var(--gold);font-weight:600}
+  .nav nav{display:flex;gap:26px;font-size:.92rem;letter-spacing:.08em;text-transform:uppercase}
+  .nav nav a:hover{color:var(--maroon)}
+  .btn{display:inline-block;padding:12px 26px;font-size:.9rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;transition:.25s;border:1px solid transparent}
+  .btn-call{background:var(--maroon);color:#fff}
+  .btn-call:hover{background:var(--maroon-deep)}
+  .btn-wa{background:#1faa55;color:#fff}
+  .btn-wa:hover{background:#178a44}
+  .btn-outline{border-color:var(--maroon);color:var(--maroon);background:transparent}
+  .btn-outline:hover{background:var(--maroon);color:#fff}
+  @media(max-width:820px){.nav nav{display:none}}
+
+  /* hero */
+  .hero{padding:64px 0 70px;background:linear-gradient(180deg,var(--ivory),var(--cream))}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
+  .eyebrow{letter-spacing:.34em;text-transform:uppercase;color:var(--gold);font-weight:600;font-size:.78rem;margin-bottom:16px}
+  .hero h2{font-family:'Cormorant Garamond',serif;font-size:3.4rem;line-height:1.04;color:var(--maroon);font-weight:700}
+  .hero h2 em{color:var(--gold);font-style:italic}
+  .hero p{margin:20px 0 30px;font-size:1.08rem;font-weight:300;max-width:34rem}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-meta{margin-top:30px;display:flex;gap:28px;flex-wrap:wrap;font-size:.9rem}
+  .hero-meta b{color:var(--maroon)}
+  .hero-img{position:relative}
+  .hero-img::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:1.5px solid var(--gold);z-index:0}
+  .hero-img img{position:relative;z-index:1;width:100%;height:560px;object-fit:cover;object-position:top}
+  @media(max-width:820px){.hero-grid{grid-template-columns:1fr}.hero h2{font-size:2.5rem}.hero-img img{height:420px}}
+
+  /* marquee */
+  .marquee{background:var(--maroon);color:var(--gold-soft);overflow:hidden;padding:13px 0}
+  .marquee-track{display:flex;gap:0;white-space:nowrap;animation:scroll 26s linear infinite;font-family:'Cormorant Garamond',serif;font-size:1.15rem;letter-spacing:.18em;text-transform:uppercase}
+  .marquee-track span{padding:0 26px}
+  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* sections */
+  section{padding:74px 0}
+  .sec-head{text-align:center;max-width:640px;margin:0 auto 46px}
+  .sec-head .eyebrow{margin-bottom:10px}
+  .sec-head h3{font-family:'Cormorant Garamond',serif;font-size:2.5rem;color:var(--maroon);font-weight:700;line-height:1.1}
+  .sec-head p{font-weight:300;margin-top:12px}
+
+  /* about */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+  .about-grid img{width:100%;height:440px;object-fit:cover}
+  .about-txt h3{font-family:'Cormorant Garamond',serif;font-size:2.3rem;color:var(--maroon);line-height:1.12;margin-bottom:16px}
+  .about-txt p{font-weight:300;margin-bottom:14px}
+  .ticks{list-style:none;margin-top:10px}
+  .ticks li{padding:7px 0 7px 30px;position:relative}
+  .ticks li::before{content:"✦";position:absolute;left:0;color:var(--gold)}
+  @media(max-width:820px){.about-grid{grid-template-columns:1fr}}
+
+  /* collections */
+  .collections{background:#fff}
+  .col-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+  .card{position:relative;overflow:hidden;background:var(--maroon-deep)}
+  .card img{width:100%;height:380px;object-fit:cover;object-position:top;transition:transform .6s}
+  .card:hover img{transform:scale(1.05)}
+  .card-body{position:absolute;left:0;right:0;bottom:0;padding:44px 26px 22px;background:linear-gradient(180deg,transparent,rgba(38,5,12,.88));color:#fff}
+  .card-body h4{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:700}
+  .card-body p{font-size:.93rem;font-weight:300;color:#f0e4cd}
+  @media(max-width:820px){.col-grid{grid-template-columns:1fr}}
+
+  /* highlights */
+  .highlights{background:var(--maroon);color:var(--ivory)}
+  .hl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;text-align:center}
+  .hl-grid .num{font-family:'Cormorant Garamond',serif;font-size:2.2rem;color:var(--gold)}
+  .hl-grid h4{font-family:'Cormorant Garamond',serif;font-size:1.45rem;margin:8px 0 6px}
+  .hl-grid p{font-weight:300;font-size:.95rem;color:#efdfc2}
+  @media(max-width:820px){.hl-grid{grid-template-columns:1fr}}
+
+  /* gallery */
+  .gal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .gal-grid img{width:100%;height:300px;object-fit:cover;object-position:top}
+  @media(max-width:820px){.gal-grid{grid-template-columns:repeat(2,1fr)}.gal-grid img{height:220px}}
+
+  /* visit */
+  .visit{background:var(--cream)}
+  .visit-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px}
+  .visit-info h3{font-family:'Cormorant Garamond',serif;font-size:2.3rem;color:var(--maroon);margin-bottom:18px}
+  .visit-info p{font-weight:300;margin-bottom:10px}
+  .hours{width:100%;border-collapse:collapse;margin:16px 0 24px}
+  .hours td{padding:9px 4px;border-bottom:1px dashed var(--gold);font-size:.98rem}
+  .hours td:last-child{text-align:right;font-weight:500;color:var(--maroon)}
+  .map-box iframe{width:100%;height:100%;min-height:380px;border:0}
+  @media(max-width:820px){.visit-grid{grid-template-columns:1fr}}
+
+  footer{background:var(--maroon-deep);color:var(--gold-soft);text-align:center;padding:26px 16px;font-size:.9rem;letter-spacing:.1em}
+  .wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;background:#1faa55;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.28)}
+  .wa-float svg{width:30px;height:30px;fill:#fff}
+</style>
+</head>
+<body>
+
+<div class="ribbon">
+  <div class="wrap">
+    <span>Open All Days · 10:00 AM – 10:00 PM</span>
+    <span>Sector 15A, Faridabad · <a href="tel:+917827083826">+91 78270 83826</a></span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#">
+      <span class="monogram"><span>V</span></span>
+      <span><h1>Vrinda Creations</h1><small>Boutique · Faridabad</small></span>
+    </a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#collections">Collections</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Visit Us</a>
+    </nav>
+    <a class="btn btn-call" href="tel:+917827083826">Call Now</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Women's Boutique · Sector 15A</p>
+      <h2>Ethnic wear, <em>made to feel</em> like it was stitched only for you.</h2>
+      <p>From festive sarees and designer suits to bridal lehengas and made-to-measure stitching — Vrinda Creations Boutique brings together ready-to-wear collections and personalised tailoring under one roof in Sector 15A, Faridabad.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-wa" href="https://wa.me/917827083826?text=Namaste!%20Mujhe%20Vrinda%20Creations%20Boutique%20ke%20collection%20ke%20baare%20me%20jaankari%20chahiye." target="_blank" rel="noopener">WhatsApp Us</a>
+        <a class="btn btn-outline" href="#collections">See Collections</a>
+      </div>
+      <div class="hero-meta">
+        <span><b>Open Daily</b><br>10:00 AM – 10:00 PM</span>
+        <span><b>Visit</b><br>Sector 15A, near Radha Swami Satsang Road</span>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="images/hero.jpg" alt="Woman wearing an elegant traditional saree at Vrinda Creations Boutique, Faridabad">
+    </div>
+  </div>
+</div>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Designer Suits ✦ Sarees ✦ Bridal Lehengas ✦ Custom Stitching ✦ Festive Wear ✦</span>
+    <span>Designer Suits ✦ Sarees ✦ Bridal Lehengas ✦ Custom Stitching ✦ Festive Wear ✦</span>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <img src="images/shop.jpg" alt="Inside a colourful women's clothing boutique with garments on display">
+    <div class="about-txt">
+      <p class="eyebrow">About the Boutique</p>
+      <h3>A neighbourhood boutique for every occasion on your calendar</h3>
+      <p>Located in Sector 15A, near Radha Swami Satsang Road, Vrinda Creations is a women's clothing boutique serving families across Faridabad — from everyday ethnic wear to the outfit you wear on the biggest day of your life.</p>
+      <p>Pick a ready piece off the rack, or bring your own fabric and design — our in-house stitching turns it into a fit that feels made only for you.</p>
+      <ul class="ticks">
+        <li>Designer suits, sarees &amp; lehengas for festive and wedding wear</li>
+        <li>Custom stitching &amp; made-to-measure fitting</li>
+        <li>Open all seven days, 10 AM to 10 PM</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="collections" class="collections">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">What You'll Find</p>
+      <h3>Our Collections</h3>
+      <p>Season after season, the racks fill with pieces picked for Faridabad's weddings, festivals and family celebrations.</p>
+    </div>
+    <div class="col-grid">
+      <article class="card">
+        <img src="images/saree.jpg" alt="Elegant saree from the collection at Vrinda Creations Boutique">
+        <div class="card-body"><h4>Sarees</h4><p>Festive, party and everyday drapes — silks, chiffons and embroidered borders for every age and occasion.</p></div>
+      </article>
+      <article class="card">
+        <img src="images/suit.jpg" alt="Designer salwar suit set at Vrinda Creations Boutique">
+        <div class="card-body"><h4>Designer Suits</h4><p>Ready-to-wear suit sets and dress materials in the season's colours, prints and handwork.</p></div>
+      </article>
+      <article class="card">
+        <img src="images/lehenga.jpg" alt="Bridal lehenga at Vrinda Creations Boutique, Faridabad">
+        <div class="card-body"><h4>Bridal Lehengas</h4><p>Wedding and sangeet lehengas with rich embroidery — plus trousseau pieces for the celebrations around it.</p></div>
+      </article>
+      <article class="card">
+        <img src="images/stitching.jpg" alt="Tailor stitching a garment at Vrinda Creations Boutique">
+        <div class="card-body"><h4>Custom Stitching</h4><p>Blouses, suits and lehengas stitched to your measurements — bring a design, leave with the fit.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="highlights">
+  <div class="wrap hl-grid">
+    <div><div class="num">01</div><h4>Made-to-Measure Fit</h4><p>Stitching done to your measurements, so every outfit sits exactly the way it should.</p></div>
+    <div><div class="num">02</div><h4>Festive to Bridal</h4><p>One boutique for daily ethnic wear, festival dressing and full wedding trousseaus.</p></div>
+    <div><div class="num">03</div><h4>Open All Week</h4><p>Walk in any day — we are open all seven days, from 10 in the morning to 10 at night.</p></div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">A Glimpse</p>
+      <h3>From Our Racks</h3>
+    </div>
+    <div class="gal-grid">
+      <img src="images/gallery1.jpg" alt="Traditional ethnic outfit on display">
+      <img src="images/gallery2.jpg" alt="Bridal ethnic wear with traditional jewellery">
+      <img src="images/gallery3.jpg" alt="Sarees and fabrics arranged on shelves inside the boutique">
+      <img src="images/gallery4.jpg" alt="Woman in a traditional Indian saree">
+    </div>
+  </div>
+</section>
+
+<section id="visit" class="visit">
+  <div class="wrap visit-grid">
+    <div class="visit-info">
+      <p class="eyebrow">Visit Us</p>
+      <h3>Drop by the boutique</h3>
+      <p><b>Vrinda Creations Boutique</b><br>Sector 15A, near Radha Swami Satsang Road,<br>Faridabad, Haryana 121007</p>
+      <table class="hours">
+        <tr><td>Monday – Sunday</td><td>10:00 AM – 10:00 PM</td></tr>
+        <tr><td>Open</td><td>All 7 days of the week</td></tr>
+      </table>
+      <p>Call or WhatsApp: <a href="tel:+917827083826" style="color:var(--maroon);font-weight:600">+91 78270 83826</a></p>
+      <div class="hero-ctas" style="margin-top:18px">
+        <a class="btn btn-call" href="https://www.google.com/maps/dir/?api=1&destination=28.397611,77.314296" target="_blank" rel="noopener">Get Directions</a>
+        <a class="btn btn-wa" href="https://wa.me/917827083826" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="map-box">
+      <iframe title="Vrinda Creations Boutique location map" src="https://maps.google.com/maps?q=28.397611,77.314296&z=16&output=embed" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  made by shibbux
+</footer>
+
+<a class="wa-float" href="https://wa.me/917827083826?text=Namaste!%20Mujhe%20Vrinda%20Creations%20Boutique%20ke%20collection%20ke%20baare%20me%20jaankari%20chahiye." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4.7 29l7.3-1.5c1.2.7 2.6 1 4 1 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm0 21.7c-1.2 0-2.4-.3-3.5-.9l-.3-.2-3.8.8.8-3.7-.2-.4c-.7-1.2-1.1-2.6-1.1-4C7.9 10.2 11.5 6.7 16 6.7S24.1 10.2 24.1 14.7 20.5 24.7 16 24.7zm5.2-6.9c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.3-.7.3-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
+
+</body>
+</html>
